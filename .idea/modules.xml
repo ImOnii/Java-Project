@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TVALB - Copy.iml" filepath="$PROJECT_DIR$/TVALB - Copy.iml" group="TVALB - Copy" />
+      <module fileurl="file://$PROJECT_DIR$/app/TVALB - Copy-app.iml" filepath="$PROJECT_DIR$/app/TVALB - Copy-app.iml" group="TVALB - Copy/app" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="TVALB/app" />
+      <module fileurl="file://$PROJECT_DIR$/tv shqip loku 2020.iml" filepath="$PROJECT_DIR$/tv shqip loku 2020.iml" group="tv shqip loku 2020" />
+      <module fileurl="file://$PROJECT_DIR$/vitamio/vitamio.iml" filepath="$PROJECT_DIR$/vitamio/vitamio.iml" group="TVALB - Copy/vitamio" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.shqip.tv">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- this is deprecated permission -->
+    <uses-permission
+        android:name="android.permission.GET_TASKS"
+        android:maxSdkVersion="19" />
+    <application
+        android:name=".oni.activities.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_oniinjava"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppMaterialTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity
+            android:name=".oni.activities.ActivitySplash"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".oni.activities.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".oni.activities.ActivityDetailChannel"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity
+            android:name=".oni.activities.ActivityDetailCategory"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".oni.activities.ActivitySearch"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".oni.activities.ActivityTvScreen"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".oni.activities.ActivityPhoneScreen"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".oni.activities.ActivityRtmpPlayer"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6474268656764178~3287009011" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <service
+            android:name=".oni.utils.NotificationExtenderExample"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE">
+            <intent-filter>
+                <action android:name="com.onesignal.NotificationExtender" />
+            </intent-filter>
+        </service>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+</manifest>

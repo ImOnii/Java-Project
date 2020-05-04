@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center"
+    android:keepScreenOn="true">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/exoPlayerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:animateLayoutChanges="true"
+        app:controller_layout_id="@layout/custom_controls">
+
+        <ImageView
+            android:id="@+id/music"
+            android:layout_width="110dp"
+            android:layout_height="101dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/ic_music" />
+    </com.google.android.exoplayer2.ui.PlayerView>
+
+    <TextView
+        android:id="@+id/emrik"
+        android:layout_width="wrap_content"
+        android:layout_height="99dp"
+        android:layout_above="@+id/progressBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="209dp"
+        android:layout_marginBottom="3dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#0FADEC"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

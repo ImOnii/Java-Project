@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/kryefaqa"
+            android:icon="@drawable/ic_oniinjava"
+            android:title="Home"/>
+
+        <item
+            android:id="@+id/drawer_favorite"
+            android:icon="@drawable/dot"
+            android:title="@string/drawer_favorite" />
+
+                <item
+                    android:id="@+id/drawer_rate"
+                    android:icon="@drawable/dot"
+                    android:title="@string/drawer_rate" />
+
+                <item
+                    android:id="@+id/drawer_more"
+                    android:icon="@drawable/dot"
+                    android:title="@string/drawer_more" />
+
+                <item
+                    android:id="@+id/drawer_share"
+                    android:icon="@drawable/dot"
+                    android:title="@string/drawer_share" />
+
+                <item
+                    android:id="@+id/drawer_about"
+                    android:icon="@drawable/dot"
+                    android:title="@string/drawer_about" />
+
+            </group>
+
+</menu>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="74dp"
+    android:background="@color/mediacontroller_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mediacontroller_time_current"
+            style="@style/MediaController_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp" />
+
+
+        <TextView
+            android:id="@+id/mediacontroller_time_total"
+            style="@style/MediaController_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp" />
+
+        <SeekBar
+            android:id="@+id/mediacontroller_seekbar"
+            style="@style/MediaController_SeekBar"
+            android:layout_width="25dp"
+            android:layout_height="72dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="373dp"
+            android:layout_marginLeft="368dp"
+            android:layout_marginTop="-2dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@id/mediacontroller_time_total"
+            android:layout_toRightOf="@id/mediacontroller_time_current"
+            android:focusable="true"
+            android:max="1000"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/mediacontroller_play_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="193dp"
+            android:background="@drawable/mediacontroller_button"
+            android:contentDescription="@string/mediacontroller_play_pause"
+            android:src="@drawable/mediacontroller_pause" />
+
+        <ImageButton
+            android:layout_width="47dp"
+            android:id="@+id/mrapa"
+            android:layout_height="47dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/ic_arrow_back"
+            android:contentDescription="@string/mediacontroller_play_pause" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="134dp"
+            android:layout_marginBottom="9dp"
+            android:text="Ju lutem klikoni rreklamat"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/mediacontroller_file_name"
+        style="@style/MediaController_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:ellipsize="marquee"
+        android:visibility="invisible"
+        android:singleLine="true" />
+
+</LinearLayout>
